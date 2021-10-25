@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script type="text/javascript" src="skf_v1.10.1.js"></script>
+    <!-- <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.10.1.js"></script> -->
+</head>
+
+<body>
+
+    <div style="margin-left: 30px">
+        <br>
+        <h1>Controlez le monde physique à partir du modèle virtuel</h1>
+	    <p>Modifiez la pression de service et observez les effets</p>
+
+        <!-- aiguille manomètre -->
+        <p> 
+            <input id="bouton1" type="button" value=" -- "></input>
+            <input id="bouton2" type="button" value="     "></input> 
+            <input id="bouton3" type="button" value=" + "></input>
+        </p> <br>
+        <!-- porte -->
+        <p>Accédez à l'armoire maintenance</p>
+        <p>
+            <input id="bouton4" type="button" value="Fermé"></input>
+            <input id="bouton5" type="button" value="Ouvert"></input>
+            <input id="bouton6" type="button" value="Laissez un commentaire"></input>
+            <br>
+        </p> 
+
+        <iframe src="" id="api-frame"></iframe>
+        <script type="text/javascript" src="scriptUsine.js"></script>
+    </div>
+
+
+    <div id="sidebar">
+        <iframe src="" id="api-frame2"></iframe>
+        <script type="text/javascript" src="scriptStation.js"></script>
+    </div>
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="script_hover.js"></script> -->
+     
+</body>
+</html>
