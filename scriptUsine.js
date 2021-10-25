@@ -1,6 +1,5 @@
-// Sketchfab Viewer API: Models Follow the mouse
 var version = '1.10.1';
-var iframe = document.getElementById('api-frame');
+var iframe = document.getElementById('api-frame1');
 
 var uidUsine = '1a745cb2bc954d19bbcd60ea10c326cd';
 
@@ -20,15 +19,15 @@ var success = function success(api) {
             api.hide(317); //sigle
 
             document.getElementById('bouton2').addEventListener('click', function () {
+              bouton1.style.backgroundColor = "white";
+              bouton3.style.backgroundColor = "white";
               api.hide(554); //toit
             });
 
             document.getElementById('bouton1').addEventListener('click', function () {
-              api.setCameraLookAt([-7.5, -14, 2.5], [-4, -12, 1.5], .2, function(err) {
-                // if (!err) {
-                //     console.log('Mvt Camera Usine');
-                // }
-              });
+              api.setCameraLookAt([-7.5, -14, 2.5], [-4, -12, 1.5], .2, function(err) {});
+              bouton1.style.backgroundColor = "red";
+              bouton3.style.backgroundColor = "white";
               setTimeout(tempoMano, 300);
               function tempoMano() {api.show(554)}
             });
@@ -36,21 +35,22 @@ var success = function success(api) {
             document.getElementById('bouton3').addEventListener('click', function () {
               api.setCameraLookAt([-7.5, -14, 2.5], [-4, -12, 1.5], .2, function(err) {});
               setTimeout(tempoMano, 300);
+              bouton3.style.backgroundColor = "red";
+              bouton1.style.backgroundColor = "white";
               function tempoMano() {api.show(554)}
             });
 
             document.getElementById('bouton4').addEventListener('click', function () {
               api.hide(317); //sigle
+              bouton5.style.backgroundColor = "white";
             });
 
             document.getElementById('bouton5').addEventListener('click', function () {
               api.setCameraLookAt([-7.5, -14, 2.5], [-4, -12, 1.5], .2, function(err) {});
               setTimeout(tempoPorte, 300);
+              bouton5.style.backgroundColor = "#F3E131";
               function tempoPorte() {api.show(317)}
             });
-
-          // end hide-show
-
 
         });
       });
