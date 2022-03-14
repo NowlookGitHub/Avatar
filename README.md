@@ -1,7 +1,7 @@
 # Avatar
 
 
-Site visible ici: https://nowlook4d.github.io/Avatar/
+Site visible ici: https://nowlookgithub.github.io/Avatar/
 
 
 
